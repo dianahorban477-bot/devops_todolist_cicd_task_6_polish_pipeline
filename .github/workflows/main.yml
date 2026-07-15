@@ -21,14 +21,13 @@ on:
           - ubuntu-latest-3.9
           - windows-latest-3.8
           - windows-latest-3.9
-      
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
   PythonVersion: 3.8
-  DockerImageName: todoapp
+  DockerImageName: dianahorban/todoapp
 
 jobs:
   python-ci:
